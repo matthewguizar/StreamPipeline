@@ -16,10 +16,10 @@ public class Map {
         ArrayList<Double> withTax = new ArrayList<Double>();
 
         withTax.addAll(prices.stream()
-            .map((price) -> {
-                return price * 1.13;
-            })
+            .map((price) -> price * 1.13)
             .collect(Collectors.toList()));
+
+            System.out.println(withTax);
         
 
     }

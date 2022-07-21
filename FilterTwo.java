@@ -17,6 +17,8 @@ public class FilterTwo {
         lowPrices.addAll(prices.stream()
             .filter((price) -> price < 5)
             .collect(Collectors.toList()));
+
+            System.out.println(lowPrices);
     }
 
     public static void filterLowPrices(ArrayList<Double> lowPrices) {

@@ -18,7 +18,7 @@ public class OperationChain {
             .map((price) -> price * 1.13)
             .collect(Collectors.toList()));
 
-
+        System.out.println(updatePrices);
     }
     
 
