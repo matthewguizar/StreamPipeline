@@ -16,6 +16,8 @@ public class FilterTwo {
     
         lowPrices.addAll(prices.stream()
             .filter((price) -> price < 5)
+            //collect is a terminal operation (ends pipeline) returns as a list
+            //array list is an implementation of list 
             .collect(Collectors.toList()));
 
             System.out.println(lowPrices);
